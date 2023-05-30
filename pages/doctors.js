@@ -37,6 +37,7 @@ export default function DoctorsInfo() {
   return (
     <Layout>
       <Image
+      alt="head img"
         src={headerImg}
         className="w-full h-32 object-cover object-left-top"
       />

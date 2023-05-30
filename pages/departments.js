@@ -13,51 +13,61 @@ export default function Departments() {
       pic: iroom,
       facility: "OBSTETRICS",
       desc: "Here's the story of a lovely lady, who was bringing up three very lovely...",
+      key:1,
     },
     {
       pic: dna,
       facility: "GYNAECOLOGY",
       desc: "We never thought of findin' a place where we belong. Don't have to stand...",
+      key:2,
     },
     {
       pic: nephro,
       facility: "HIGH RISK PREGNANCY",
       desc: "You unlock this door with the key of imagination. Beyond it is another dimension:...",
+      key:3,
     },
     {
       pic: parental,
       facility: "ONCOLOGY SCREENING",
       desc: "One thousand years ago, superstition and the sword ruled. It was a time of...",
+      key:4,
     },
     {
       pic: dna,
       facility: "MENOPAUSE CLINIC",
       desc: "We never thought of findin' a place where we belong. Don't have to stand...",
+      key:5,
     },
     {
       pic: dna,
       facility: "INFERTILTY",
       desc: "We never thought of findin' a place where we belong. Don't have to stand...",
+      key:6,
     },
     {
       pic: dna,
       facility: "I.U.I",
       desc: "We never thought of findin' a place where we belong. Don't have to stand...",
+      key:7,
     },
     {
       pic: dna,
       facility: "LAPROSCOPIC SURGERY",
       desc: "We never thought of findin' a place where we belong. Don't have to stand...",
+      key:8,
     },
     {
       pic: dna,
       facility: "ULTRASONOGRAPHY ",
       desc: "We never thought of findin' a place where we belong. Don't have to stand...",
+      key:9,
     },
     {
       pic: dna,
       facility: "PATHOLOGY ",
       desc: "We never thought of findin' a place where we belong. Don't have to stand...",
+      key:10,
     },
   ];
 
@@ -68,6 +78,7 @@ export default function Departments() {
       <Image
         src={headerImg}
         className="w-full h-32 object-cover object-left-top"
+        alt="img"
       />
       <h1 className="relative -top-28 font-normal text-3xl ml-14 mt-1">
         Departments
@@ -211,7 +222,7 @@ export default function Departments() {
           {filterPics.map((item) => {
             return (
               <div
-                // key={item.key}
+                key={item.key}
                 className="max-w-xs bg-white border border-gray-200 rounded-lg shadow "
               >
                 <div className="overflow-hidden">

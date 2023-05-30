@@ -223,7 +223,7 @@ export default function Navbar() {
                                     <Link href='/book-appointment' className=" text-md text-black bg-yellow-300 p-2 rounded-full">Book An Appointment</Link>
                                 </li>
                                 <li className='flex items-center gap-4 w-fit shadow-white'>
-                                    <Image src={phoneLogo} className='w-8 shadow ' />
+                                    <Image alt='phone logo' src={phoneLogo} className='w-8 shadow ' />
 
                                     <Link href='https://wa.me/+919130745878' target='_blank' className=" text-lg text-white font-semibold underline">+919130745878</Link>
                                 </li>

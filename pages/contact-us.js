@@ -48,7 +48,7 @@ export default function ContactUsService() {
                         <div>
 
                             <p className="flex item-center gap-2 mt-2">
-                                <Image src={mailLogo} height={5} width={23} />
+                                <Image src={mailLogo} height={5} width={23} alt="img" />
                                 <a
                                     href="mailto:example@example.com"
                                     className="text-gray-700 hover:text-blue-700 "
@@ -57,7 +57,7 @@ export default function ContactUsService() {
                                 </a>
                             </p>
                             <p className="flex item-center gap-2 mt-2">
-                                <Image src={wpLogo} height={5} width={23} />
+                                <Image src={wpLogo} height={5} width={23} alt="img" />
 
                                 <a
                                     href="https://api.whatsapp.com/send?phone=+1234567890"
@@ -69,7 +69,7 @@ export default function ContactUsService() {
                                 </a>
                             </p>
                             <p className="flex item-center gap-2 mt-2">
-                                <Image src={instaLogo} height={5} width={23} />
+                                <Image src={instaLogo} height={5} width={23} alt="img" />
 
                                 <a
                                     href="tel:+1234567890"

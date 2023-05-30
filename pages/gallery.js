@@ -16,16 +16,16 @@ import headerImg from "../assets/header.jpg";
 import Link from "next/link";
 export default function Gallery(options) {
   const gallery = [
-    { pic: gal1, title: "Inpatient Room", facility: "Facility" },
-    { pic: gal2, title: "Inpatient Room", facility: "Facility" },
-    { pic: gal3, title: "Inpatient Room", facility: "Facility" },
-    { pic: gal4, title: "Inpatient Room", facility: "Facility" },
-    { pic: gal5, title: "Inpatient Room", facility: "Facility" },
-    { pic: gal6, title: "Inpatient Room", facility: "Facility" },
-    { pic: gal7, title: "Inpatient Room", facility: "Facility" },
-    { pic: Doc1, title: "Inpatient Room", facility: "Facility" },
-    { pic: Doc2, title: "Inpatient Room", facility: "Facility" },
-    { pic: Doc3, title: "Inpatient Room", facility: "Facility" },
+    { key:1, pic: gal1, title: "Inpatient Room", facility: "Facility" },
+    { key:2, pic: gal2, title: "Inpatient Room", facility: "Facility" },
+    { key:3, pic: gal3, title: "Inpatient Room", facility: "Facility" },
+    { key:4, pic: gal4, title: "Inpatient Room", facility: "Facility" },
+    { key:5, pic: gal5, title: "Inpatient Room", facility: "Facility" },
+    { key:6, pic: gal6, title: "Inpatient Room", facility: "Facility" },
+    { key:7, pic: gal7, title: "Inpatient Room", facility: "Facility" },
+    { key:8, pic: Doc1, title: "Inpatient Room", facility: "Facility" },
+    { key:9, pic: Doc2, title: "Inpatient Room", facility: "Facility" },
+    { key:10, pic: Doc3, title: "Inpatient Room", facility: "Facility" },
   ];
 
   const [filterPics, setFilterPics] = useState(gallery);
@@ -34,6 +34,7 @@ export default function Gallery(options) {
     <Layout>
       <Image
         src={headerImg}
+        alt="header Img"
         className="w-full h-32 object-cover object-left-top"
       />
       <h1 className="relative -top-28 font-normal text-3xl ml-14 mt-1">
@@ -95,6 +96,7 @@ export default function Gallery(options) {
             console.log(item.pic);
             return (
               <Link
+              key={item.key}
                 href="/"
                 className="flex flex-wrap justify-center w-42 h-62 m-2 overflow-hidden transition-all delay-1000"
               >
